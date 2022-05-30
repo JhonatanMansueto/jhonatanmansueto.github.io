@@ -1,0 +1,237 @@
+:root {
+    --cor1: black;
+    --cor2: #222222;
+    --cor3: #444444;
+    --cor4: #666666;
+    --cor5: #888888;
+    --cor6: #aaaaaa;
+    --cor7: #cccccc;
+    --cor8: #eeeeee;
+    --cor9: white;
+}
+
+main {
+    text-align: center;
+}
+
+main .background {
+    width: 100%;
+}
+
+main .background img {
+    width: 100%;
+}
+
+main .areas-de-atuacao {
+    width: 90%;
+
+    margin: auto;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+main .areas-de-atuacao h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+main .areas-de-atuacao .item-atuacao {
+    display: inline-block;
+
+    margin: 10px;
+
+    width: 45%;
+}
+
+main .areas-de-atuacao .item-atuacao .imagem {
+    display: inline-block;
+
+    vertical-align: top;
+
+    width: 10%;
+}
+
+main .areas-de-atuacao .item-atuacao .imagem img {
+    display: block;
+
+    width: 100%;
+}
+
+main .areas-de-atuacao .item-atuacao .texto {
+    display: inline-block;
+
+    margin-left: 12px;
+
+    vertical-align: top;
+
+    width: 80%;
+
+    height: min-content;
+}
+
+main .areas-de-atuacao .item-atuacao .texto h3 {
+    font-size: 22px;
+    font-weight: bold;
+
+    text-align: left;
+
+    line-height: 1.3;
+}
+
+main .areas-de-atuacao .item-atuacao .texto ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+main .areas-de-atuacao .item-atuacao .texto ul li {
+    font-size: 18px;
+
+    text-align: left;
+
+    line-height: 1.3;
+}
+
+main .area-contato {
+    width: 90%;
+
+    margin: 30px auto;
+    padding: 0px;
+}
+
+main .area-contato .fale-conosco {
+    display: inline-block;
+
+    width: 35%;
+
+    margin: auto 20px;
+    padding: 0px;
+
+    text-align: left;
+}
+
+main .area-contato .fale-conosco h2 {
+    font-size: 26px;
+    font-weight: bold;
+
+    text-align: center;
+}
+
+main .area-contato .fale-conosco .item {
+    width: 100%;
+
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+main .area-contato .fale-conosco .item .imagem {
+    display: inline-block;
+
+    width: 10%;
+
+    vertical-align: middle;
+}
+
+main .area-contato .fale-conosco .item .imagem img {
+    display: block;
+
+    width: 100%;
+}
+
+main .area-contato .fale-conosco .item .texto {
+    display: inline-block;
+
+    vertical-align: middle;
+}
+
+main .area-contato .fale-conosco .item .texto p {
+    font-size: 18px;
+
+    text-align: left;
+}
+
+main .area-contato .fale-conosco .item .texto p a {
+    text-decoration: none;
+
+    color: black;
+}
+
+main .area-contato .formulario {
+    display: inline-block;
+
+    width: 45%;
+
+    margin: auto 20px;
+    padding: 0px;
+
+    vertical-align: top;
+
+    text-align: left;
+}
+
+main .area-contato .formulario h2 {
+    font-size: 26px;
+    font-weight: bold;
+
+    text-align: center;
+}
+
+main .area-contato .formulario div {
+    margin-top: 10px;
+    padding: 0px;
+
+    vertical-align: top;
+}
+
+main .area-contato .formulario div label {
+    margin: 0px;
+    padding: 0px;
+    
+    font-size: 18px;
+}
+
+main .area-contato .formulario div input, main .area-contato .formulario div textarea {
+    width: 100%;
+
+    margin: auto;
+    margin-top: 5px;
+    padding: 10px;
+
+    font-size: 16px;
+
+    resize: none;
+
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+main .area-contato .formulario input[type=submit] {
+    margin: auto;
+    margin-top: 10px;
+    padding: 15px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    color: var(--cor1);
+
+    background-color: var(--cor7);
+
+    border: 2px solid var(--cor6);
+    border-radius: 10px;
+    
+    transition: 200ms;
+}
+
+main .area-contato .formulario input[type=submit]:hover {
+    cursor: pointer;
+
+    color: var(--cor1);
+
+    background-color: var(--cor6);
+
+    border: 2px solid var(--cor4);
+
+    transition: 200ms;
+}

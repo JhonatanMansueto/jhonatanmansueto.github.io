@@ -1,0 +1,168 @@
+:root {
+    --cor1: black;
+    --cor2: #222222;
+    --cor3: #444444;
+    --cor4: #666666;
+    --cor5: #888888;
+    --cor6: #aaaaaa;
+    --cor7: #cccccc;
+    --cor8: #eeeeee;
+    --cor9: white;
+}
+
+@font-face {
+    font-family: Zorque;
+    src: url(/font/zorque.otf);
+}
+
+@font-face {
+    font-family: 'Another Typewriter';
+    src: url(/font/another-typewriter.ttf);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header {
+    clear: both;
+
+    margin: 0px;
+    padding: 10px 0px;
+
+    background-color: var(--cor9);
+
+    border-bottom: 2px solid var(--cor8);
+}
+
+header .header {
+    width: 90%;
+
+    margin: auto;
+    padding: 0px;
+}
+
+header .header a {
+    display: inline-block;
+
+    vertical-align: middle;
+
+    margin: 0px;
+    margin-right: 25px;
+    padding: 0px;
+
+    text-decoration: none;
+}
+
+header .header a img {
+    display: block;
+
+    width: 100px;
+}
+
+header .header ul {
+    clear: both;
+    overflow: hidden;
+
+    display: inline-block;
+
+    vertical-align: middle;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+header .header ul li {
+    float: left;
+
+    vertical-align: middle;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+header .header ul li a {
+    display: block;
+
+    margin: 0px;
+    margin-right: 5px;
+    padding: 10px;
+
+    color: var(--cor1);
+
+    border: 2px solid var(--cor6);
+    border-radius: 25px;
+
+    background-color: var(--cor9);
+
+    font-weight: bold;
+    font-size: 24px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+
+    transition: 200ms;
+}
+
+header .header ul li a.active {
+    color: var(--cor1);
+    border-color: var(--cor6);
+    background-color: var(--cor8);
+
+    transition: 200ms;
+}
+
+header .header ul li a:hover {
+    color: var(--cor1);
+    border-color: var(--cor4);
+    background-color: var(--cor7);
+
+    transition: 200ms;
+}
+
+/* Main */
+main {
+    clear: both;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Footer */
+footer {
+    clear: both;
+
+    margin: 0px;
+    padding: 15px 0px;
+
+    background-color: var(--cor9);
+
+    border-top: 2px solid var(--cor8);
+}
+
+footer .footer {
+    width: 90%;
+
+    margin: auto;
+    padding: 0px;
+
+    text-align: center;
+}
+
+footer .footer h2 {
+    font-weight: bold;
+    font-size: 22px;
+
+    text-align: center;
+}
+
+footer .footer p {
+    margin-top: 5px;
+
+    font-weight: normal;
+    font-size: 18px;
+
+    text-align: center;
+}
