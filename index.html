@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Início - Jhonatan Machado</title>
+
+        <link rel="stylesheet" href="/content/css/reset.css">
+        <link rel="stylesheet" href="/content/css/style.css">
+        <link rel="stylesheet" href="/content/css/index.css">
+
+        <script src="/content/js/include.js"></script>
+    </head>
+    <body>
+        <header w3-include-html="/content/include/header.html"></header>
+        <main>
+            <section class="banner">
+                <h1>Jhonatan Machado</h1>
+            </section>
+            <section class="sobre">
+                <h2>Sobre Mim</h2>
+                <div class="conteudo">
+                    <div class="imagem">
+                        <img src="/content/img/jhonatan.jpg" alt="foto de perfil do Jhonatan">
+                    </div>
+                    <div class="texto">
+                        <p>Sou formado em Técnico em Informática e estudante de Engenharia da computação.</p>
+                        <p>Atuando com montagem, manutenção e suporte de computadores, notebooks, celulares e redes.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="areaAtuacao">
+                <h2>Áreas de Atuação</h2>
+                <div class="itens">
+                    <div class="item box1">
+                        <img src="/content/icon/screwdriver-wrench.svg" alt="Suporte Técnico">
+                        <h3>Suporte Técnico</h3>
+                        <ul>
+                            <li>Montagem e manutenção de computadores e notebooks</li>
+                            <li>Formatação e limpeza</li>
+                            <li>Recuperação e backup</li>
+                            <li>Configuração e administração de redes e servidores</li>
+                        </ul>
+                    </div>
+                    <div class="item box2">
+                        <img src="/content/icon/photo-film.svg" alt="Audiovisual">
+                        <h3>Audiovisual</h3>
+                        <ul>
+                            <li>Digitalização de fotos</li>
+                            <li>Gravação e duplicação de CD e DVD</li>
+                            <li>Suporte para transmissões ao vivo</li>
+                        </ul>
+                    </div>
+                    <div class="item box3">
+                        <img src="/content/icon/laptop-code.svg" alt="Desenvolvimento">
+                        <h3>Sites e Design</h3>
+                        <ul>
+                            <li>Desenvolvimento de programas e aplicativos</li>
+                            <li>Desenvolvimento de sites e lojas virtuais</li>
+                            <li>Registro e hospedagem de servidores e domínios</li>
+                        </ul>
+                    </div>
+                    <div class="item box4">
+                        <img src="/content/icon/folder-open.svg" alt="">
+                        <h3>Office</h3>
+                        <ul>
+                            <li>Consulta e envio de e-mails</li>
+                            <li>Segunda via de boletos em geral</li>
+                            <li>Formatação e organização de documentos</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="contato">
+                <h2>Contato</h2>
+                <div class="meiosContato">
+                    <h3>Meios de contato</h3>
+                    <div class="item">
+                        <img src="/content/icon/phone.svg" alt="Icon phone">
+                        <p>Telefone: <a href="tel:+5519999722601">(19) 99972-2601</a></p>
+                    </div>
+                    <div class="item">
+                        <img src="/content/icon/whatsapp.svg" alt="Icon WhatsApp">
+                        <p>WhatsApp: <a href="https://wa.me/5519999722601">(19) 99972-2601</a></p>
+                    </div>
+                    <div class="item">
+                        <img src="/content/icon/envelope.svg" alt="Icon envelope">
+                        <p>E-mail: <a href="mailto:jhonatanmansueto@gmail.com">jhonatanmansueto@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="formulario">
+                    <h3>Enviar email</h3>
+                    <form action="/content/php/sendmail.php" method="post" target="_blank">
+                        <div>
+                            <label for="fullname">Nome completo:</label>
+                            <input type="text" name="fullname" id="fullname" required>
+                        </div>
+                        <div>
+                            <label for="mail">Email:</label>
+                            <input type="email" name="mail" id="mail" required>
+                        </div>
+                        <div>
+                            <label for="phone">Telefone:</label>
+                            <input type="tel" name="phone" id="phone" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" placeholder="xx-xxxxx-xxxx">
+                        </div>
+                        <div>
+                            <label for="subject">Assunto:</label>
+                            <input type="text" name="subject" id="subject" required>
+                        </div>
+                        <div>
+                            <label for="message">Mensagem:</label>
+                            <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                        </div>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer w3-include-html="/content/include/footer.html"></footer>
+        <section class="linkWhatsapp">
+            <a href="https://wa.me/5519999722601"><img src="/content/icon/whatsappBranco.svg" alt="Link de contato pelo Whatsapp"> Converse via WhatsApp</a>
+        </section>
+        <script>
+            includeHTML();
+        </script>
+    </body>
+</html>

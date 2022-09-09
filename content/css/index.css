@@ -1,0 +1,303 @@
+main {
+    clear: both;
+}
+
+/* Banner */
+main .banner {
+    height: 600px;
+
+    background-image: url("/content/img/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .banner h1 {
+    position: relative;
+
+    top: 50%;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    font-size: 40px;
+    font-weight: bolder;
+
+    color: white;
+}
+
+/* Sobre */
+main .sobre {
+    clear: both;
+    overflow: hidden;
+
+    margin: 15px auto;
+
+    text-align: center;
+}
+
+main .sobre h2 {
+    font-size: 32px;
+}
+
+main .sobre .conteudo {
+    clear: both;
+    overflow: hidden;
+
+    width: -moz-fit-content;
+    width: fit-content;
+
+    margin: auto;
+    margin-top: 10px;
+}
+
+main .sobre .conteudo .imagem {
+    display: inline-block;
+
+    vertical-align: top;
+}
+
+main .sobre .conteudo .imagem img {
+    display: block;
+
+    width: 200px;
+    height: 200px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 5px;
+}
+
+main .sobre .conteudo .texto {
+    display: inline-block;
+
+    margin-left: 10px;
+    
+    width: 300px;
+
+    text-align: justify;
+}
+
+main .sobre .conteudo .texto p {
+    display: block;
+
+    font-size: 20px;
+}
+
+/* Áreas de Atuação */
+main .areaAtuacao {
+    display: block;
+
+    clear: both;
+    overflow: hidden;
+
+    width: 90%;
+
+    margin: 15px auto;
+    padding: 10px;
+
+    text-align: center;
+}
+
+main .areaAtuacao h2 {
+    font-size: 32px;
+}
+
+main .areaAtuacao .itens {
+    display: flex;
+    flex-wrap: wrap;
+
+    height: max-content;
+}
+main .areaAtuacao .itens .item {
+    flex: 1;
+
+    vertical-align: top;
+
+    width: 45%;
+
+    margin: 5px;
+
+    padding: auto;
+
+    padding: 10px;
+
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+main .areaAtuacao .itens .item img {
+    width: 40px;
+    height: 40px;
+}
+
+main .areaAtuacao .itens .item h3 {
+    font-size: 26px;
+}
+
+main .areaAtuacao .itens .item ul {
+    list-style-type: disc;
+    list-style-position: inside;
+
+    text-align: left;
+}
+
+main .areaAtuacao .itens .item ul li {
+    font-size: 20px;
+}
+
+/* Contato */
+main .contato {
+    clear: both;
+    overflow: hidden;
+    
+    width: 90%;
+    margin: 15px auto;
+
+    text-align: center;
+}
+
+main .contato h2 {
+    font-size: 32px;
+
+    margin-bottom: 5px;
+}
+
+/* Meios de contato */
+main .contato .meiosContato {
+    display: inline-block;
+    vertical-align: top;
+
+    margin: auto;
+    margin-right: 10px;
+
+    padding: auto;
+
+    text-align: left;
+}
+
+main .contato .meiosContato h3 {
+    text-align: center;
+
+    font-size: 26px;
+}
+
+main .contato .meiosContato .item {
+    margin: 5px 0px;
+}
+
+main .contato .meiosContato .item img {
+    display: inline-block;
+
+    vertical-align: middle;
+
+    width: 40px;
+    height: 40px;
+}
+
+main .contato .meiosContato .item p {
+    display: inline-block;
+
+    margin: 0px;
+    margin-left: 5px;
+
+    font-size: 20px;
+
+    line-height: 1.5;
+
+    color: var(--cor1);
+}
+
+main .contato .meiosContato .item a {
+    display: inline-block;
+
+    text-decoration: none;
+    text-decoration-line: underline;
+    text-underline-offset: 7px;
+
+    color: var(--cor1);
+}
+
+/* Formulário */
+main .contato .formulario {
+    flex: 1;
+
+    display: inline-block;
+
+    vertical-align: top;
+
+    width: 50%;
+
+    margin: auto;
+    margin-left: 5px;
+
+    padding: 0px;
+
+    text-align: left;
+}
+
+main .contato .formulario h3 {
+    text-align: center;
+
+    font-size: 26px;
+}
+
+main .contato .formulario div {
+    display: block;
+}
+
+main .contato .formulario div label {
+    display: block;
+
+    margin-top: 10px;
+    margin-bottom: 3px;
+
+    font-size: 22px;
+}
+
+main .contato .formulario div input, main .contato .formulario div input:hover, main .contato .formulario div input:focus, main .contato .formulario div textarea, main .contato .formulario div textarea:hover, main .contato .formulario div textarea:focus {
+    display: block;
+
+    width: 100%;
+
+    margin: 0px;
+
+    padding: 10px;
+
+    font-size: 20px;
+
+    outline: none;
+
+    resize: none;
+
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+main .contato .formulario input[type="submit"] {
+    display: block;
+
+    margin: auto;
+    margin-top: 15px;
+
+    padding: 10px;
+
+    font-size: 22px;
+    font-weight: bolder;
+
+    background-color: transparent;
+
+    border: 2px solid var(--verde);
+    border-radius: 10px;
+
+    transition: all 200ms ease-in-out;
+}
+
+main .contato .formulario input[type="submit"]:hover {
+    cursor: pointer;
+
+    color: var(--cor6);
+
+    background-color: var(--verde);
+}
